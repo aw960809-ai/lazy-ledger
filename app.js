@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION='2.0.0-github';
+const APP_VERSION='2.1.0-github';
 const CATEGORIES=[['食','🍜','餐飲'],['衣','👕','服飾'],['住','💡','水電'],['行','🚆','交通'],['育','📚','學習'],['樂','🎮','娛樂']];
 const main=document.getElementById('appMain'),dialog=document.getElementById('amountDialog'),amountTitle=document.getElementById('amountTitle'),amountInput=document.getElementById('amountInput'),saveAmountButton=document.getElementById('saveAmount');
 let route='entry',selectedCategory=null,showId=false;
@@ -80,6 +80,5 @@ function undoLast(){const x=latest();if(!x)return;deleteTx(x.id)}
 function receiveAllowance(){const first=!activeAllowance();if(!first&&state.config.allowanceRemaining>0)return toast('目前生活費尚未用完');state.config.allowanceActive=true;state.config.allowanceCycle=first?1:(Number(state.config.allowanceCycle)||0)+1;state.config.allowanceRemaining=Number(state.config.allowanceInitial)||8000;state.config.allowanceStartedAt=nowIso();persist();render();toast(first?'第 1 期生活費已開始':'已開始下一期生活費')}
 saveAmountButton.onclick=addExpense;amountInput.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addExpense()}});
 dialog.addEventListener('close',()=>{selectedCategory=null;amountInput.value=''});
-document.querySelectorAll('.nav-btn').forEach(b=>b.onclick=()=>{route=b.dataset.route;document.querySelectorAll('.nav-btn').forEach(x=>x.classList.toggle('active',x===b));render()});
-if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+document.querySelectorAll('.nav-btn').forEach(b=>b.onclick=()=>{route=b.dataset.route;document.querySelectorAll('.nav-btn').forEach(x=>x.classList.toggle('active',x===b));render();window.scrollTo({top:0,left:0,behavior:'instant'})});
 recompute();persist();applyRecurring();render();
