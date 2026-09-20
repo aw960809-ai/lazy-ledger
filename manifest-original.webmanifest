@@ -1,0 +1,24 @@
+{
+  "id": "/lazy-ledger/",
+  "name": "六類懶人記帳",
+  "short_name": "六類記帳",
+  "start_url": "/lazy-ledger/",
+  "scope": "/lazy-ledger/",
+  "display": "standalone",
+  "background_color": "#f5f4ef",
+  "theme_color": "#f5f4ef",
+  "icons": [
+    {
+      "src": "./icon-original-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-original-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

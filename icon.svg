@@ -1,7 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-<rect width="512" height="512" rx="108" fill="#eef5e9"/>
-<rect x="112" y="76" width="292" height="350" rx="54" fill="#fffdf7"/>
-<g fill="#0c6b4d"><circle cx="154" cy="139" r="25"/><circle cx="154" cy="190" r="25"/><circle cx="154" cy="241" r="25"/><circle cx="154" cy="292" r="25"/><circle cx="154" cy="343" r="25"/><circle cx="154" cy="394" r="25"/></g>
-<circle cx="374" cy="364" r="61" fill="#c89c3d"/>
-<text x="374" y="386" text-anchor="middle" font-family="system-ui,sans-serif" font-size="67" font-weight="800" fill="#fffdf4">$</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="六類記帳">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fbf3"/><stop offset="1" stop-color="#dfead7"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#eef5e9"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5d77f"/><stop offset="1" stop-color="#c89c3d"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#244638" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <rect x="112" y="76" width="292" height="350" rx="54" fill="url(#paper)" filter="url(#shadow)"/>
+  <path d="M357 76h47v47c0 15-12 27-27 27h-20z" fill="#0b684b"/>
+  <g fill="#0c6b4d"><circle cx="154" cy="139" r="25"/><circle cx="154" cy="190" r="25"/><circle cx="154" cy="241" r="25"/><circle cx="154" cy="292" r="25"/><circle cx="154" cy="343" r="25"/><circle cx="154" cy="394" r="25"/></g>
+  <g stroke="#f7fbf5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M146 128v22m16-22v22m-12-22v11h8v-11m12 0v22"/><path d="M143 186h22l-2 17h-18zm5 0v-6a6 6 0 0112 0v6"/><path d="M141 243l13-12 13 12v15h-9v-9h-8v9h-9z"/><path d="M142 296l4-10h16l4 10v9h-4v-5h-16v5h-4zm4 0h16"/><path d="M142 341c0-8 10-11 12-4 2-7 12-4 12 4 0 7-12 15-12 15s-12-8-12-15z"/><path d="M141 399l26-13m-13 6-7-8m7 8 8 7m-8-7v14"/>
+  </g>
+  <g fill="#c9d9c6"><rect x="202" y="126" width="116" height="16" rx="8"/><rect x="202" y="177" width="103" height="16" rx="8"/><rect x="202" y="228" width="124" height="16" rx="8"/><rect x="202" y="279" width="106" height="16" rx="8"/><rect x="202" y="330" width="119" height="16" rx="8"/><rect x="202" y="381" width="126" height="16" rx="8"/></g>
+  <g fill="#137653"><rect x="334" y="128" width="42" height="12" rx="6"/><rect x="334" y="179" width="42" height="12" rx="6"/><rect x="334" y="230" width="42" height="12" rx="6"/><rect x="334" y="281" width="42" height="12" rx="6"/><rect x="334" y="332" width="42" height="12" rx="6"/><rect x="334" y="383" width="42" height="12" rx="6"/></g>
+  <circle cx="374" cy="364" r="61" fill="url(#gold)" filter="url(#shadow)"/>
+  <text x="374" y="386" text-anchor="middle" font-family="system-ui, sans-serif" font-size="67" font-weight="800" fill="#fffdf4">$</text>
 </svg>
