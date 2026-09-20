@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "7B.1-source-registry-1",
+  "generatedAt": "2026-09-07T15:34:59.748760+00:00",
+  "policy": {
+    "catalogIsPublic": true,
+    "userProfileMayFilterCatalog": true,
+    "userProfileMayMutateCatalog": false,
+    "browserDirectCrossSiteFetch": false,
+    "scheduledFetch": true
+  },
+  "sources": [
+    {
+      "id": "thu_official",
+      "name": "東海大學活動報名系統",
+      "enabled": true,
+      "adapter": "thu_official",
+      "scope": "campus",
+      "categories": [
+        "legal_academic",
+        "lecture",
+        "career_internship",
+        "competition"
+      ],
+      "priority": 1,
+      "trustLevel": "official",
+      "fetchType": "html",
+      "domainAllowlist": [
+        "thu.edu.tw"
+      ],
+      "startUrls": [
+        "https://tevent.thu.edu.tw/tEvent_front/index.php"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": [
+          "東海大學",
+          "Tunghai University"
+        ]
+      },
+      "catalogPolicy": "public",
+      "notes": "V96.6.11.1.1 東海大學 tEvent 專用結構化 adapter。"
+    },
+    {
+      "id": "taichung_job",
+      "name": "臺中市就業服務一鍵Catch",
+      "enabled": true,
+      "adapter": "taichung_job",
+      "scope": "city",
+      "categories": [
+        "career_internship",
+        "lecture"
+      ],
+      "priority": 2,
+      "trustLevel": "official",
+      "fetchType": "html",
+      "domainAllowlist": [
+        "1catchjob.taichung.gov.tw"
+      ],
+      "startUrls": [
+        "https://1catchjob.taichung.gov.tw/more.aspx?cat=new"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": []
+      },
+      "catalogPolicy": "public",
+      "notes": "V96.6.11.1.1 臺中市就業服務處活動專用結構化 adapter；排除明確中高齡/銀髮與雇主專屬項目。"
+    },
+    {
+      "id": "pathfinder_official",
+      "name": "青年百億海外圓夢基金計畫",
+      "enabled": true,
+      "adapter": "pathfinder_official",
+      "scope": "overseas",
+      "categories": [
+        "youth_program",
+        "international"
+      ],
+      "priority": 4,
+      "trustLevel": "official",
+      "fetchType": "html",
+      "domainAllowlist": [
+        "twpathfinder.yda.gov.tw"
+      ],
+      "startUrls": [
+        "https://twpathfinder.yda.gov.tw/downloads",
+        "https://twpathfinder.yda.gov.tw/overview1830"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [],
+        "schoolNames": []
+      },
+      "catalogPolicy": "public",
+      "notes": "V96.6.11.1.1 海外翱翔組官方申請窗口 adapter。"
+    },
+    {
+      "id": "mofa_working_holiday",
+      "name": "外交部青年度假打工",
+      "enabled": true,
+      "adapter": "mofa_working_holiday",
+      "scope": "overseas",
+      "categories": [
+        "international",
+        "career_internship",
+        "youth_program"
+      ],
+      "priority": 4,
+      "trustLevel": "official",
+      "fetchType": "html",
+      "domainAllowlist": [
+        "youthtaiwan.mofa.gov.tw"
+      ],
+      "startUrls": [
+        "https://youthtaiwan.mofa.gov.tw/WorkingHoliday/"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [],
+        "schoolNames": []
+      },
+      "catalogPolicy": "public",
+      "notes": "V96.6.11.1.1 外交部青年度假打工常設官方入口。"
+    },
+    {
+      "id": "yda_official",
+      "name": "教育部青年發展署",
+      "enabled": true,
+      "adapter": "yda_official",
+      "scope": "nationwide",
+      "categories": [
+        "youth_program",
+        "competition",
+        "lecture",
+        "international"
+      ],
+      "priority": 3,
+      "trustLevel": "official",
+      "fetchType": "html",
+      "domainAllowlist": [
+        "yda.gov.tw"
+      ],
+      "startUrls": [
+        "https://www.yda.gov.tw/EventList.aspx?pid=56&uid=101"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [],
+        "schoolNames": []
+      },
+      "catalogPolicy": "public",
+      "notes": "V96.6.11.1.1 青年署專用結構化 adapter。"
+    }
+  ]
+}

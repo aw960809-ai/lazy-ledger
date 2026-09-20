@@ -1,0 +1,409 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "kind": "activity",
+    "updatedAt": "2026-09-20T06:23:08.643619+00:00",
+    "count": 5,
+    "retiredThisRun": 0,
+    "revivedThisRun": 0,
+    "retiredTotal": 5,
+    "revivedTotal": 0,
+    "retainedOnFailure": 0,
+    "carriedMissing": 12,
+    "needsReview": 12,
+    "policy": "expired-immediate; missing-two-hits-plus-30-days; failed-source-no-miss; source-reappearance-auto-revive"
+  },
+  "archive": [
+    {
+      "id": "auto-tcjob-5583",
+      "title": "◎裕元花園酒店 × 旅宿業職場體驗 ◎",
+      "date": "2026-09-21",
+      "time": "09:30",
+      "scope": "台中",
+      "type": "職涯／實習",
+      "kind": "event",
+      "url": "https://1catchjob.taichung.gov.tw/detail.aspx?act=5583",
+      "keywords": "◎裕元花園酒店 × 旅宿業職場體驗 ◎ 台中 臺中市 青年 職涯 職涯／實習",
+      "direct": true,
+      "team": false,
+      "available": true,
+      "source": "臺中市就業服務一鍵Catch",
+      "statusText": "臺中市就業服務處官方活動；活動日 2026-09-21；截止 2026-09-18",
+      "government": true,
+      "deadline": "2026-09-18",
+      "eventEndDate": "",
+      "location": "裕元花園酒店（臺中市西屯區福安里台灣大道四段610號）",
+      "organizer": "臺中市就業服務處",
+      "audience": "有限制",
+      "autofetch": {
+        "engine": "V96.6.11.1.1",
+        "sourceId": "taichung_job",
+        "act": "5583",
+        "fetchedAt": "2026-09-18T06:00:19.666978+00:00"
+      },
+      "fitScore": 46,
+      "fitTier": "探索",
+      "fitReasons": [
+        "同心圓第2圈：台中+4",
+        "青少年／營隊／教學+8",
+        "職涯／實習+20",
+        "具體職涯體驗，可轉化為行動+8",
+        "有明確截止日+4",
+        "有明確地點+2"
+      ],
+      "goalMatches": [
+        "青少年／營隊／教學",
+        "職涯／實習"
+      ],
+      "circleLevel": 2,
+      "circleLabel": "台中",
+      "radarEligible": true,
+      "hardFilterReason": "",
+      "eligibilityReason": "",
+      "semanticDuplicateOf": "",
+      "firstSeen": "2026-09-09T12:50:00.937440+00:00",
+      "lastSeen": "2026-09-18T06:01:08.427013+00:00",
+      "missCount": 0,
+      "needsReview": false,
+      "sourceId": "taichung_job",
+      "sourceCategories": [
+        "career_internship",
+        "lecture"
+      ],
+      "sourceTrust": "official",
+      "sourcePriority": 2,
+      "sourceProfileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": []
+      },
+      "country": "TW",
+      "city": "臺中市",
+      "category": "career_internship",
+      "archiveKind": "activity",
+      "retiredAt": "2026-09-19T05:59:16.875680+00:00",
+      "retireCode": "expired",
+      "retireReason": "截止日已過",
+      "lastActiveAt": "2026-09-18T06:01:08.427013+00:00"
+    },
+    {
+      "id": "auto-thu-2026080015",
+      "title": "【公共事務菁英講座】幸福臺中升級的關鍵：智慧化、永續化與國際化X江啟臣(立法院副院長)@心之谷永續教育園區",
+      "date": "2026-09-19",
+      "time": "",
+      "scope": "東海校內",
+      "type": "語言／國際",
+      "kind": "event",
+      "url": "https://tevent.thu.edu.tw/tEvent_front/tEvent.php?type=0&page=4&conference_code=2026080015",
+      "keywords": "【公共事務菁英講座】幸福臺中升級的關鍵：智慧化、永續化與國際化X江啟臣(立法院副院長)@心之谷永續教育園區 東海大學 公共事務碩士在職專班 學術活動 教職員，費用：0；學生，費用：0；校外人士，費用：0 學術／講座 校內",
+      "direct": true,
+      "team": false,
+      "available": true,
+      "source": "東海大學活動報名系統",
+      "statusText": "東海大學官方活動；承辦 公共事務碩士在職專班；活動日 2026-09-19；截止 2026-09-17",
+      "government": false,
+      "deadline": "2026-09-17",
+      "eventEndDate": "2026-09-19",
+      "location": "幸福臺中升級的關鍵：智慧化、永續化與國際化",
+      "organizer": "公共事務碩士在職專班",
+      "audience": "教職員，費用：0；學生，費用：0；校外人士，費用：0",
+      "autofetch": {
+        "engine": "V96.6.11.1.1",
+        "sourceId": "thu_official",
+        "conferenceCode": "2026080015",
+        "fetchedAt": "2026-09-15T06:12:41.341139+00:00"
+      },
+      "fitScore": 96,
+      "fitTier": "高適配",
+      "fitReasons": [
+        "同心圓第1圈：東海校內+8",
+        "法律／轉學考+42",
+        "語言／國際／海外+40",
+        "有明確截止日+4",
+        "有明確地點+2"
+      ],
+      "goalMatches": [
+        "法律／轉學考",
+        "語言／國際／海外"
+      ],
+      "circleLevel": 1,
+      "circleLabel": "東海校內",
+      "radarEligible": true,
+      "hardFilterReason": "",
+      "eligibilityReason": "",
+      "semanticDuplicateOf": "",
+      "firstSeen": "2026-09-09T12:50:00.937440+00:00",
+      "lastSeen": "2026-09-15T06:14:04.334759+00:00",
+      "missCount": 2,
+      "needsReview": true,
+      "sourceId": "thu_official",
+      "sourceCategories": [
+        "legal_academic",
+        "lecture",
+        "career_internship",
+        "competition"
+      ],
+      "sourceTrust": "official",
+      "sourcePriority": 1,
+      "sourceProfileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": [
+          "東海大學",
+          "Tunghai University"
+        ]
+      },
+      "country": "TW",
+      "city": "臺中市",
+      "schoolName": "東海大學",
+      "category": "legal_academic",
+      "archiveKind": "activity",
+      "retiredAt": "2026-09-18T06:01:08.427013+00:00",
+      "retireCode": "expired",
+      "retireReason": "截止日已過",
+      "lastActiveAt": "2026-09-15T06:14:04.334759+00:00"
+    },
+    {
+      "id": "auto-thu-2026080023",
+      "title": "115學年度 健康暨諮商中心志工團--招募說明會",
+      "date": "2026-09-16",
+      "time": "",
+      "scope": "東海校內",
+      "type": "法律／學術",
+      "kind": "event",
+      "url": "https://tevent.thu.edu.tw/tEvent_front/tEvent.php?type=0&page=1&conference_code=2026080023",
+      "keywords": "115學年度 健康暨諮商中心志工團--招募說明會 東海大學 健康暨諮商中心 育樂活動 學生，費用：0 法律／學術 校內",
+      "direct": true,
+      "team": false,
+      "available": true,
+      "source": "東海大學活動報名系統",
+      "statusText": "東海大學官方活動；承辦 健康暨諮商中心；活動日 2026-09-16；截止 2026-09-15",
+      "government": false,
+      "deadline": "2026-09-15",
+      "eventEndDate": "2026-09-16",
+      "location": "健諮中心團體諮商室(學務處3F)",
+      "organizer": "健康暨諮商中心",
+      "audience": "學生，費用：0",
+      "autofetch": {
+        "engine": "V96.6.11.1.1",
+        "sourceId": "thu_official",
+        "conferenceCode": "2026080023",
+        "fetchedAt": "2026-09-15T06:12:21.006808+00:00"
+      },
+      "fitScore": 73,
+      "fitTier": "高適配",
+      "fitReasons": [
+        "同心圓第1圈：東海校內+8",
+        "法律／轉學考+10",
+        "青少年／營隊／教學+34",
+        "直接連結法律學習目標+15",
+        "有明確截止日+4",
+        "有明確地點+2"
+      ],
+      "goalMatches": [
+        "法律／轉學考",
+        "青少年／營隊／教學"
+      ],
+      "circleLevel": 1,
+      "circleLabel": "東海校內",
+      "radarEligible": true,
+      "hardFilterReason": "",
+      "eligibilityReason": "",
+      "semanticDuplicateOf": "",
+      "firstSeen": "2026-09-09T12:50:00.937440+00:00",
+      "lastSeen": "2026-09-15T06:14:04.334759+00:00",
+      "missCount": 0,
+      "needsReview": false,
+      "sourceId": "thu_official",
+      "sourceCategories": [
+        "legal_academic",
+        "lecture",
+        "career_internship",
+        "competition"
+      ],
+      "sourceTrust": "official",
+      "sourcePriority": 1,
+      "sourceProfileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": [
+          "東海大學",
+          "Tunghai University"
+        ]
+      },
+      "country": "TW",
+      "city": "臺中市",
+      "schoolName": "東海大學",
+      "category": "legal_academic",
+      "archiveKind": "activity",
+      "retiredAt": "2026-09-16T06:07:49.530864+00:00",
+      "retireCode": "expired",
+      "retireReason": "截止日已過",
+      "lastActiveAt": "2026-09-15T06:14:04.334759+00:00"
+    },
+    {
+      "id": "auto-tcjob-5387",
+      "title": "115年度『親子未來職涯對話工作坊』",
+      "date": "2026-09-12",
+      "time": "13:00",
+      "scope": "台中",
+      "type": "職涯／實習",
+      "kind": "event",
+      "url": "https://1catchjob.taichung.gov.tw/detail.aspx?act=5387",
+      "keywords": "115年度『親子未來職涯對話工作坊』 台中 臺中市 青年 職涯 職涯／實習",
+      "direct": true,
+      "team": false,
+      "available": true,
+      "source": "臺中市就業服務一鍵Catch",
+      "statusText": "臺中市就業服務處官方活動；活動日 2026-09-12；截止 2026-09-10",
+      "government": true,
+      "deadline": "2026-09-10",
+      "eventEndDate": "",
+      "location": "思享空間－201大教室",
+      "organizer": "臺中市就業服務處",
+      "audience": "高中職以上學生及家長。",
+      "autofetch": {
+        "engine": "V96.6.11.1.1",
+        "sourceId": "taichung_job",
+        "act": "5387",
+        "fetchedAt": "2026-09-10T17:02:49.458100+00:00"
+      },
+      "fitScore": 46,
+      "fitTier": "探索",
+      "fitReasons": [
+        "同心圓第2圈：台中+4",
+        "青少年／營隊／教學+8",
+        "職涯／實習+20",
+        "具體職涯體驗，可轉化為行動+8",
+        "有明確截止日+4",
+        "有明確地點+2"
+      ],
+      "goalMatches": [
+        "青少年／營隊／教學",
+        "職涯／實習"
+      ],
+      "circleLevel": 2,
+      "circleLabel": "台中",
+      "radarEligible": true,
+      "hardFilterReason": "",
+      "eligibilityReason": "",
+      "semanticDuplicateOf": "",
+      "firstSeen": "2026-09-09T12:50:00.937440+00:00",
+      "lastSeen": "2026-09-10T17:03:47.493023+00:00",
+      "missCount": 0,
+      "needsReview": false,
+      "sourceId": "taichung_job",
+      "sourceCategories": [
+        "career_internship",
+        "lecture"
+      ],
+      "sourceTrust": "official",
+      "sourcePriority": 2,
+      "sourceProfileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": []
+      },
+      "country": "TW",
+      "city": "臺中市",
+      "category": "career_internship",
+      "archiveKind": "activity",
+      "retiredAt": "2026-09-12T05:55:00.124382+00:00",
+      "retireCode": "expired",
+      "retireReason": "截止日已過",
+      "lastActiveAt": "2026-09-10T17:03:47.493023+00:00"
+    },
+    {
+      "id": "auto-tcjob-5582",
+      "title": "◎裕元花園酒店 × 餐飲業職場體驗 ◎",
+      "date": "2026-09-10",
+      "time": "09:30",
+      "scope": "台中",
+      "type": "職涯／實習",
+      "kind": "event",
+      "url": "https://1catchjob.taichung.gov.tw/detail.aspx?act=5582",
+      "keywords": "◎裕元花園酒店 × 餐飲業職場體驗 ◎ 台中 臺中市 青年 職涯 職涯／實習",
+      "direct": true,
+      "team": false,
+      "available": true,
+      "source": "臺中市就業服務一鍵Catch",
+      "statusText": "臺中市就業服務處官方活動；活動日 2026-09-10；截止 2026-09-09",
+      "government": true,
+      "deadline": "2026-09-09",
+      "eventEndDate": "",
+      "location": "裕元花園酒店（臺中市西屯區福安里台灣大道四段610號）",
+      "organizer": "臺中市就業服務處",
+      "audience": "有限制",
+      "autofetch": {
+        "engine": "V96.6.11.1.1",
+        "sourceId": "taichung_job",
+        "act": "5582",
+        "fetchedAt": "2026-09-09T12:48:55.841982+00:00"
+      },
+      "fitScore": 46,
+      "fitTier": "探索",
+      "fitReasons": [
+        "同心圓第2圈：台中+4",
+        "青少年／營隊／教學+8",
+        "職涯／實習+20",
+        "具體職涯體驗，可轉化為行動+8",
+        "有明確截止日+4",
+        "有明確地點+2"
+      ],
+      "goalMatches": [
+        "青少年／營隊／教學",
+        "職涯／實習"
+      ],
+      "circleLevel": 2,
+      "circleLabel": "台中",
+      "radarEligible": true,
+      "hardFilterReason": "",
+      "eligibilityReason": "",
+      "semanticDuplicateOf": "",
+      "firstSeen": "2026-09-09T12:50:00.937440+00:00",
+      "lastSeen": "2026-09-09T12:50:00.937440+00:00",
+      "missCount": 0,
+      "needsReview": false,
+      "sourceId": "taichung_job",
+      "sourceCategories": [
+        "career_internship",
+        "lecture"
+      ],
+      "sourceTrust": "official",
+      "sourcePriority": 2,
+      "sourceProfileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": []
+      },
+      "country": "TW",
+      "city": "臺中市",
+      "category": "career_internship",
+      "archiveKind": "activity",
+      "retiredAt": "2026-09-10T06:03:37.274328+00:00",
+      "retireCode": "expired",
+      "retireReason": "截止日已過",
+      "lastActiveAt": "2026-09-09T12:50:00.937440+00:00"
+    }
+  ]
+}

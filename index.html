@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="六類懶人記帳 GitHub 離線版">
+  <title>六類懶人記帳</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">SIX · SIMPLE LEDGER</p>
+      <h1>六類懶人記帳</h1>
+    </div>
+    <span id="statusDot" class="status-dot" title="本機資料已啟用"></span>
+  </header>
+
+  <main id="appMain"></main>
+
+  <nav class="bottom-nav" aria-label="主要導覽">
+    <button class="nav-btn active" data-route="entry"><span>＋</span><small>記帳</small></button>
+    <button class="nav-btn" data-route="period"><span>▤</span><small>本期</small></button>
+    <button class="nav-btn" data-route="history"><span>◷</span><small>歷史</small></button>
+    <button class="nav-btn" data-route="settings"><span>⚙</span><small>設定</small></button>
+  </nav>
+
+  <dialog id="amountDialog" class="amount-dialog">
+    <form method="dialog" class="dialog-head">
+      <div><p class="eyebrow">QUICK ENTRY</p><h2 id="amountTitle">記一筆</h2></div>
+      <button class="icon-btn" value="cancel" aria-label="關閉">✕</button>
+    </form>
+    <div class="amount-body">
+      <label class="amount-input-wrap"><span>NT$</span><input id="amountInput" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="0"></label>
+      <button id="saveAmount" class="primary giant" type="button">記下</button>
+    </div>
+  </dialog>
+
+  <div id="toastHost"></div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

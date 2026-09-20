@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "7B.2-coverage-1",
+  "generatedAt": "2026-09-07T15:51:29.219052+00:00",
+  "policy": {
+    "localCoverageMustMatchUserProfile": true,
+    "uncoveredLocalScopeFailClosed": true,
+    "browserDirectCrossSiteFetch": false,
+    "sourceExpansionViaRegistry": true
+  },
+  "schools": [
+    {
+      "canonical": "東海大學",
+      "aliases": [
+        "東海大學",
+        "Tunghai University"
+      ],
+      "sourceIds": [
+        "thu_official"
+      ]
+    }
+  ],
+  "cities": [
+    {
+      "canonical": "臺中市",
+      "aliases": [
+        "臺中市",
+        "台中市",
+        "Taichung"
+      ],
+      "sourceIds": [
+        "thu_official",
+        "taichung_job"
+      ]
+    }
+  ],
+  "scopes": {
+    "campus": [
+      "thu_official"
+    ],
+    "city": [
+      "taichung_job"
+    ],
+    "overseas": [
+      "pathfinder_official",
+      "mofa_working_holiday"
+    ],
+    "nationwide": [
+      "yda_official"
+    ]
+  },
+  "sources": [
+    {
+      "id": "thu_official",
+      "name": "東海大學活動報名系統",
+      "enabled": true,
+      "scope": "campus",
+      "categories": [
+        "legal_academic",
+        "lecture",
+        "career_internship",
+        "competition"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": [
+          "東海大學",
+          "Tunghai University"
+        ]
+      }
+    },
+    {
+      "id": "taichung_job",
+      "name": "臺中市就業服務一鍵Catch",
+      "enabled": true,
+      "scope": "city",
+      "categories": [
+        "career_internship",
+        "lecture"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [
+          "臺中市",
+          "台中市",
+          "Taichung"
+        ],
+        "schoolNames": []
+      }
+    },
+    {
+      "id": "pathfinder_official",
+      "name": "青年百億海外圓夢基金計畫",
+      "enabled": true,
+      "scope": "overseas",
+      "categories": [
+        "youth_program",
+        "international"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [],
+        "schoolNames": []
+      }
+    },
+    {
+      "id": "mofa_working_holiday",
+      "name": "外交部青年度假打工",
+      "enabled": true,
+      "scope": "overseas",
+      "categories": [
+        "international",
+        "career_internship",
+        "youth_program"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [],
+        "schoolNames": []
+      }
+    },
+    {
+      "id": "yda_official",
+      "name": "教育部青年發展署",
+      "enabled": true,
+      "scope": "nationwide",
+      "categories": [
+        "youth_program",
+        "competition",
+        "lecture",
+        "international"
+      ],
+      "profileMatch": {
+        "country": "TW",
+        "cities": [],
+        "schoolNames": []
+      }
+    }
+  ]
+}
