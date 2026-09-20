@@ -1,7 +1,7 @@
 {
   "id": "/lazy-ledger/",
   "name": "六類懶人記帳",
-  "short_name": "記帳",
+  "short_name": "六類記帳",
   "start_url": "/lazy-ledger/",
   "scope": "/lazy-ledger/",
   "display": "standalone",
