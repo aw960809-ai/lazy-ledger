@@ -3,50 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f5f4ef">
+  <meta name="theme-color" content="#0e1116">
   <meta name="application-name" content="六類記帳">
-  <meta name="description" content="六類懶人記帳 GitHub 離線版">
+  <meta name="description" content="手機優先的六類懶人記帳">
   <title>六類懶人記帳</title>
   <link rel="manifest" href="./manifest-original.webmanifest">
-<link rel="icon" href="./icon-original-192.png" type="image/png" sizes="192x192">
-<link rel="icon" href="./icon-original-512.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="./apple-touch-original.png" sizes="180x180">
-
-
-<link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./icon-original-192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="./icon-original-512.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="./apple-touch-original.png" sizes="180x180">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <div id="app">
   <header class="topbar">
-    <div>
-      <p class="eyebrow">SIX · SIMPLE LEDGER</p>
-      <h1>六類懶人記帳</h1>
+    <div class="brand">
+      <p class="app-kicker">LAZY LEDGER</p>
+      <h1>生活費</h1>
     </div>
-    <span id="statusDot" class="status-dot" title="本機資料已啟用"></span>
+    <div class="local-state" title="帳務資料保存在這台裝置">
+      <span id="statusDot" class="status-dot"></span>
+      <small>本機</small>
+    </div>
   </header>
 
   <main id="appMain"></main>
 
   <nav class="bottom-nav" aria-label="主要導覽">
-    <button class="nav-btn active" data-route="entry"><span>＋</span><small>記帳</small></button>
-    <button class="nav-btn" data-route="period"><span>▤</span><small>本期</small></button>
-    <button class="nav-btn" data-route="history"><span>◷</span><small>歷史</small></button>
-    <button class="nav-btn" data-route="settings"><span>⚙</span><small>設定</small></button>
+    <button class="nav-btn active" data-route="entry" aria-label="首頁">
+      <span class="nav-icon">⌂</span><small>首頁</small>
+    </button>
+    <button class="nav-btn" data-route="history" aria-label="明細">
+      <span class="nav-icon">≡</span><small>明細</small>
+    </button>
+    <button class="nav-btn" data-route="period" aria-label="分析">
+      <span class="nav-icon">◉</span><small>分析</small>
+    </button>
+    <button class="nav-btn" data-route="settings" aria-label="設定">
+      <span class="nav-icon">⚙</span><small>設定</small>
+    </button>
   </nav>
 
   <dialog id="amountDialog" class="amount-dialog">
     <form method="dialog" class="dialog-head">
-      <div><p class="eyebrow">QUICK ENTRY</p><h2 id="amountTitle">記一筆</h2></div>
+      <div>
+        <p class="eyebrow">QUICK ENTRY</p>
+        <h2 id="amountTitle">記一筆</h2>
+      </div>
       <button class="icon-btn" value="cancel" aria-label="關閉">✕</button>
     </form>
     <div class="amount-body">
-      <label class="amount-input-wrap"><span>NT$</span><input id="amountInput" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="0"></label>
+      <label class="amount-input-wrap">
+        <span>NT$</span>
+        <input id="amountInput" inputmode="numeric" pattern="[0-9]*" autocomplete="off" placeholder="0">
+      </label>
       <button id="saveAmount" class="primary giant" type="button">記下</button>
+    </div>
+  </dialog>
+
+  <dialog id="otherDialog" class="sheet-dialog">
+    <div class="sheet-grabber"></div>
+    <form method="dialog" class="sheet-head">
+      <div>
+        <p class="eyebrow">OTHER</p>
+        <h2>其他支出</h2>
+      </div>
+      <button class="icon-btn" value="cancel" aria-label="關閉">✕</button>
+    </form>
+    <div class="sheet-body">
+      <p class="sheet-hint">可選一個用途；不選也能直接記帳。</p>
+      <div class="preset-grid" id="otherPresetGrid">
+        <button type="button" data-other-preset="日用品">日用品</button>
+        <button type="button" data-other-preset="社團">社團</button>
+        <button type="button" data-other-preset="醫療">醫療</button>
+        <button type="button" data-other-preset="禮物">禮物</button>
+        <button type="button" data-other-preset="臨時">臨時</button>
+        <button type="button" data-other-preset="衣物">衣物</button>
+      </div>
+      <label class="sheet-note">
+        <span>備註（選填）</span>
+        <input id="otherNote" maxlength="30" placeholder="例如：洗衣精">
+      </label>
+      <button id="saveOther" class="primary giant" type="button">記下 · 其他</button>
     </div>
   </dialog>
 
   <div id="toastHost"></div>
 </div>
+
 <script src="./app.js"></script>
 <script src="./ui-feedback.js"></script>
 <script src="./pwa-runtime.js"></script>
