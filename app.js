@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION='3.0.0-ui';
+const APP_VERSION='3.1.0-ui';
 const DAY=86400000;
 
 const CATEGORY_META={

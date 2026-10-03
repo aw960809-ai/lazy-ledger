@@ -1,8 +1,8 @@
-const VERSION='3.0.0';
+const VERSION='3.1.0';
 const CACHE_PREFIX='lazy-ledger-github-';
 const CACHE=CACHE_PREFIX+VERSION;
 const SHELL=[
-  './','./index.html','./app.js','./styles.css','./ui-feedback.js','./pwa-runtime.js',
+  './','./index.html','./app.js','./v31-ui.js','./styles.css','./ui-feedback.js','./pwa-runtime.js',
   './manifest-original.webmanifest','./icon-original-192.png','./icon-original-512.png','./apple-touch-original.png'
 ];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
