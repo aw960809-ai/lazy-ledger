@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION='3.1.0-ui';
+const APP_VERSION='3.1.1-ui';
 const DAY=86400000;
 
 const CATEGORY_META={
@@ -677,6 +677,11 @@ function undoLast(){const x=latest();if(!x)return;deleteTx(x.id,true)}
 function receiveAllowance(){
   const first=!activeAllowance();
   if(!first&&state.config.allowanceRemaining>0)return toast('目前生活費尚未用完');
+  const amount=Number(state.config.allowanceInitial)||8000;
+  const message=first
+    ?`確認已收到第一筆 NT$ ${money(amount)}？`
+    :`確認已收到下一筆 NT$ ${money(amount)}？\n開始後會進入第 ${(Number(state.config.allowanceCycle)||0)+1} 期，舊紀錄不會回溯修改。`;
+  if(!confirm(message))return;
   state.config.allowanceActive=true;
   state.config.allowanceCycle=first?1:(Number(state.config.allowanceCycle)||0)+1;
   state.config.allowanceRemaining=Number(state.config.allowanceInitial)||8000;

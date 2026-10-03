@@ -1,4 +1,4 @@
-const VERSION='3.1.0';
+const VERSION='3.1.1';
 const CACHE_PREFIX='lazy-ledger-github-';
 const CACHE=CACHE_PREFIX+VERSION;
 const SHELL=[

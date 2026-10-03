@@ -412,3 +412,19 @@ button:not(:disabled):active,.primary:not(:disabled):active,.secondary:not(:disa
 .compact-settings{padding:13px 14px}.compact-settings h3{margin:2px 0 7px;font-size:17px}.allowance-settings .setting-title{align-items:center}.allowance-state{margin:3px 0 8px;color:var(--muted);font-size:12px}.rules-details{margin:0 0 10px;border:1px solid var(--line);border-radius:11px;background:var(--panel-2);overflow:hidden}.rules-details summary{padding:9px 11px;list-style:none;cursor:pointer;color:var(--accent-2);font-size:12px;font-weight:600}.rules-details summary::-webkit-details-marker{display:none}.rules-details p{margin:0;padding:0 11px 10px;color:var(--muted);font-size:12px;line-height:1.55}.compact-settings .setting{margin:8px 0}.compact-settings .setting input,.compact-settings .rule-form input,.compact-settings .rule-form select{min-height:44px}.compact-settings .rule-form{margin-top:9px;padding-top:9px}
 .bottom-nav{min-height:58px;padding:4px 8px calc(4px + env(safe-area-inset-bottom))}.nav-btn{min-height:50px;border-radius:12px}.nav-btn.active{background:transparent;color:var(--accent-2)}.nav-btn .nav-icon{display:grid;place-items:center;min-width:38px;min-height:28px;padding:1px 8px;border-radius:10px;font-size:21px}.nav-btn.active .nav-icon{background:var(--accent-soft)}.nav-btn small{font-size:10.5px}
 @media(max-width:380px){.topbar{padding-left:12px;padding-right:12px}.compact-hero{padding:14px}.compact-hero .hero-money strong{font-size:32px}.compact-quick{padding:12px}.recent-row{padding-left:7px}}
+
+
+/* v3.1.1 allowance refill */
+.allowance-refill{
+  width:100%;
+  min-height:44px;
+  margin-top:10px;
+  padding:8px 12px;
+  border:1px solid rgba(101,198,166,.28);
+  border-radius:12px;
+  background:rgba(101,198,166,.10);
+  color:var(--accent-2);
+  font-size:13px;
+  font-weight:650;
+}
+.allowance-refill:active{background:rgba(101,198,166,.17)}

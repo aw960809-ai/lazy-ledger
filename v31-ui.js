@@ -62,11 +62,15 @@ function entryPage(){
       <div class="progress-track"><i style="width:${usedPct}%"></i></div>
       <div class="hero-caption"><span>${activeAllowance()?`已使用 ${money(used)} / ${money(initial)}`:'尚未起算'}</span><span>記帳期剩 ${daysLeft} 天</span></div>
       <div class="hero-stats">
-        <div class="hero-stat"><span>記帳期剩餘日均</span><strong>${activeAllowance()?`NT$ ${money(daily)}`:'—'}</strong></div>
+        <div class="hero-stat"><span>生活費每日可用</span><strong>${activeAllowance()?`NT$ ${money(daily)}`:'—'}</strong></div>
         <div class="hero-stat"><span>本期自費</span><strong>NT$ ${money(sum.self)}</strong></div>
         <div class="hero-stat"><span>今日已花</span><strong>NT$ ${money(today)}</strong></div>
       </div>
-      ${activeAllowance()?'':'<button id="receiveAllowance" class="primary wide hero-action">我已收到第一筆 $8,000</button>'}
+      ${!activeAllowance()
+        ?'<button id="receiveAllowance" class="primary wide hero-action">我已收到第一筆 NT$ 8,000</button>'
+        :remain<=0
+          ?'<button id="receiveAllowance" class="allowance-refill">＋ 已收到下一筆 NT$ 8,000</button>'
+          :''}
     </section>
 
     <section class="quick-card compact-quick">
