@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="六類記帳">
 <title>六類記帳 — cream green gold, 20261005a</title>
-<rect width="512" height="512" rx="108" fill="#F7F5E9"/><g transform="">
+<rect width="512" height="512" fill="#F7F5E9"/><g transform="translate(256 256) scale(0.82) translate(-256 -256)">
       <rect x="150" y="85" width="239" height="333" rx="29" fill="#105947"/>
       <rect x="150" y="85" width="38" height="333" rx="17" fill="#176951"/>
       <path d="M119 157h51M119 226h51M119 295h51M119 364h51" stroke="#105947" stroke-width="20" stroke-linecap="round"/>

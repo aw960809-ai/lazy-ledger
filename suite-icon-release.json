@@ -1,0 +1,28 @@
+{
+  "release": "20261005a",
+  "app": "lazy-ledger",
+  "short_name": "六類記帳",
+  "source_commit": "fe550e1ea95d9d4e89e38d185dd7ce85867a3324",
+  "active_manifest": "manifest-original.webmanifest",
+  "manifests": [
+    "manifest-original.webmanifest",
+    "manifest.webmanifest"
+  ],
+  "scope_of_change": "launcher-icons-only",
+  "storage_migration": false,
+  "application_versions_changed": false,
+  "colors": {
+    "background": "#F7F5E9",
+    "primary": "#105947",
+    "accent": "#D3A341"
+  },
+  "assets": {
+    "icon.svg": "ead3ee52e166bab90fa185dcae75f761f6c79373e433839418624114cabefde6",
+    "icon-maskable.svg": "b3c7271c383507fc8770a8a9fbd4d4c6764179469f8ef325b59a66ee7dfb2b86",
+    "icon-64.png": "a151045325e4a80d73505c20d7031f45953456b71d9cc53f0daf26947f37375e",
+    "apple-touch-icon.png": "95db7c29abfe9c22a17183869da5d273e6adc5d1d36b5d5d99ad4dec1828574d",
+    "icon-192.png": "7abb4ea569b1ae3930404099081047ddb33f4d499b322b02698894fc4563b4ce",
+    "icon-512.png": "c38ba0ddb212dbcf1b18dd4028d832fe264b41865af8e9818d793559c32de289",
+    "icon-maskable-512.png": "9a8f984fae04edaa046931515682c29d891aae43755c9d0d75f2431d0e5d6f0e"
+  }
+}

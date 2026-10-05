@@ -1,7 +1,18 @@
+/* SUITE_ICON_RELEASE:20261005a; visual assets only; storage and application versions unchanged. */
 const VERSION='3.1.1';
 const CACHE_PREFIX='lazy-ledger-github-';
-const CACHE=CACHE_PREFIX+VERSION;
-const SHELL=[
+const CACHE=CACHE_PREFIX+VERSION+'-icons-20261005a';
+const SHELL=[/* suite-icons:assets:start */
+  "./assets/suite-icons/20261005a/icon-64.png",
+  "./assets/suite-icons/20261005a/apple-touch-icon.png",
+  "./assets/suite-icons/20261005a/icon-192.png",
+  "./assets/suite-icons/20261005a/icon-512.png",
+  "./assets/suite-icons/20261005a/icon-maskable-512.png",
+  "./manifest-original.webmanifest",
+  "./manifest.webmanifest",
+  "./suite-icon-release.json",
+/* suite-icons:assets:end */
+
   './','./index.html','./app.js','./v31-ui.js','./styles.css','./ui-feedback.js','./pwa-runtime.js',
   './manifest-original.webmanifest','./icon-original-192.png','./icon-original-512.png','./apple-touch-original.png'
 ];
